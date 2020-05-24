@@ -44,3 +44,6 @@ hs_err_pid*
 **/.settings/
 **/.myeclipse/
 rebel*.xml
+
+# mmap temp file
+*~$lock
