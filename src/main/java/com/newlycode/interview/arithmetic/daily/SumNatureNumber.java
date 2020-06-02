@@ -1,7 +1,7 @@
 package com.newlycode.interview.arithmetic.daily;
 
 /**
- * 根据参数求自然数前N个数的和。
+ * 【中等】根据参数求自然数前N个数的和。
  *  不能使用乘法，for,while,if,else,switch,case,三位运算符等关键字及条件判断语句。
  *  方法一(不可用)： (1+n)*n/2, for/while
  *  方法二： 递归 O(n)
