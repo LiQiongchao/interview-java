@@ -10,7 +10,7 @@ public class SystemUtilsTest {
 
     @Test
     public void availableProcessors() {
-        // 获取电脑可用的进程数
+        // 获取电脑可用的核数
         System.out.println(Runtime.getRuntime().availableProcessors());
     }
 
