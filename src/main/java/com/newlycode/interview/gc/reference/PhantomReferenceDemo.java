@@ -2,7 +2,6 @@ package com.newlycode.interview.gc.reference;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;
-import java.lang.ref.WeakReference;
 
 /**
  * 虚引用
