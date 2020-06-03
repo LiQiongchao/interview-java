@@ -23,7 +23,7 @@ public class SoftReferenceDemo {
         Object object1 = new Object();
         SoftReference<Object> softReference = new SoftReference<>(object1);
         System.out.println(object1);
-        System.out.println(softReference);
+        System.out.println(softReference.get());
 
         // object1置空
         object1 = null;
@@ -31,7 +31,7 @@ public class SoftReferenceDemo {
         System.gc();
         System.out.println(object1);
         // 由于内存充足softReference还存在
-        System.out.println(softReference);
+        System.out.println(softReference.get());
     }
 
     public static void memoryNotEnough() {
