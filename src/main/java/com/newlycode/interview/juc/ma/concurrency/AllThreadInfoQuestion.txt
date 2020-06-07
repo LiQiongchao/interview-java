@@ -1,0 +1,110 @@
+用法：javap <选项> <类>
+使用 --help 列出可能的选项
+Classfile /D:/WorkSpaces/practise-projects/interview-java/target/classes/com/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion.class
+  Last modified 2020年6月7日; size 724 bytes
+  SHA-256 checksum 08295a19a7589d901786bf3c96ff7ff6f76f6fe8495051abf23df1c8469a6a50
+  Compiled from "SynchronizedKeywordQuestion.java"
+public class com.newlycode.interview.juc.ma.concurrency.SynchronizedKeywordQuestion
+  minor version: 0
+  major version: 52
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #2                          // com/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion
+  super_class: #3                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 4, attributes: 1
+Constant pool:
+   #1 = Methodref          #3.#22         // java/lang/Object."<init>":()V
+   #2 = Class              #23            // com/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion
+   #3 = Class              #24            // java/lang/Object
+   #4 = Utf8               <init>
+   #5 = Utf8               ()V
+   #6 = Utf8               Code
+   #7 = Utf8               LineNumberTable
+   #8 = Utf8               LocalVariableTable
+   #9 = Utf8               this
+  #10 = Utf8               Lcom/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion;
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               args
+  #14 = Utf8               [Ljava/lang/String;
+  #15 = Utf8               synchronizedBlock
+  #16 = Utf8               StackMapTable
+  #17 = Class              #24            // java/lang/Object
+  #18 = Class              #25            // java/lang/Throwable
+  #19 = Utf8               action
+  #20 = Utf8               SourceFile
+  #21 = Utf8               SynchronizedKeywordQuestion.java
+  #22 = NameAndType        #4:#5          // "<init>":()V
+  #23 = Utf8               com/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion
+  #24 = Utf8               java/lang/Object
+  #25 = Utf8               java/lang/Throwable
+{
+  public com.newlycode.interview.juc.ma.concurrency.SynchronizedKeywordQuestion();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   Lcom/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=0, locals=1, args_size=1
+         0: return
+      LineNumberTable:
+        line 10: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       1     0  args   [Ljava/lang/String;
+
+  private static void synchronizedBlock();
+    descriptor: ()V
+    flags: (0x000a) ACC_PRIVATE, ACC_STATIC
+    Code:
+      stack=2, locals=2, args_size=0
+         0: ldc           #2                  // class com/newlycode/interview/juc/ma/concurrency/SynchronizedKeywordQuestion
+         2: dup
+         3: astore_0
+         4: monitorenter
+         5: aload_0
+         6: monitorexit
+         7: goto          15
+        10: astore_1
+        11: aload_0
+        12: monitorexit
+        13: aload_1
+        14: athrow
+        15: return
+      Exception table:
+         from    to  target type
+             5     7    10   any
+            10    13    10   any
+      LineNumberTable:
+        line 13: 0
+        line 14: 5
+        line 15: 15
+      StackMapTable: number_of_entries = 2
+        frame_type = 255 /* full_frame */
+          offset_delta = 10
+          locals = [ class java/lang/Object ]
+          stack = [ class java/lang/Throwable ]
+        frame_type = 250 /* chop */
+          offset_delta = 4
+
+  private static synchronized void action();
+    descriptor: ()V
+    flags: (0x002a) ACC_PRIVATE, ACC_STATIC, ACC_SYNCHRONIZED
+    Code:
+      stack=0, locals=0, args_size=0
+         0: return
+      LineNumberTable:
+        line 17: 0
+}
+SourceFile: "SynchronizedKeywordQuestion.java"
