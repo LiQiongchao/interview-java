@@ -1,7 +1,5 @@
 package com.newlycode.interview.arithmetic.top100;
 
-import jdk.nashorn.internal.ir.CallNode;
-
 /**
  * 【简单】7. 整数反转
  *
