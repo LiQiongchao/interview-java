@@ -2,6 +2,8 @@ package com.newlycode.interview;
 
 import org.junit.Test;
 
+import java.util.Hashtable;
+
 /**
  * @Author: LiQiongchao
  * @Date: 2020/6/5 21:28
@@ -22,7 +24,11 @@ public class StringTest {
     public void nullTest() {
         String test = null;
         // java.lang.NullPointerException
-        System.out.println(test.hashCode());
+//        System.out.println(test.hashCode());
+
+        Hashtable hashtable = new Hashtable();
+        // java.lang.NullPointerException
+        hashtable.put(test, "aa");
     }
 
 }
