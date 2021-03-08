@@ -18,4 +18,11 @@ public class StringTest {
         // false true
     }
 
+    @Test
+    public void nullTest() {
+        String test = null;
+        // java.lang.NullPointerException
+        System.out.println(test.hashCode());
+    }
+
 }
